@@ -1,0 +1,73 @@
+<! req 
+3 pages, with links to one another
+google search, with similar design to google
+image search, with similar design
+advanced search, with similar design; 4 boxes stacked vertically, search button
+i'm feeling lucky
+overall aesthetics
+>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <style>
+            .container-fluid {
+                height:100vh;
+                border: 1px solid black;
+                display: flex;
+                flex-direction:column;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+            #others{
+                position: absolute;
+                top:0;
+                right:0;
+            }
+            #searchbar {
+                border-radius: 25px;
+                width: 600px;
+                height: 50px;
+                border: 1px solid lightgrey;
+            }
+            button {
+                height: 40px;
+                width: 130px;
+                border-radius: 6px;
+                background-color:  #F6F5F5;
+                border: 0px;
+                font-size: 14px;
+                font-family: 'Helvetica';
+            }
+            img {
+                height: 300px;
+                width: auto;
+            }
+            div > a {
+                font-family: 'Helvetica';
+                text-decoration: none;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "others">
+            <a href = "gimage.html">Google Image</a>
+            <a href = "gadvanced.html">Google Advanced</a>
+        </div>
+        <form class="container-fluid" action="https://google.com/search?">
+            <img src = "google.jpg" alt = "Google">
+            <input id ="searchbar" type="text" name="q"><br>
+            <div>
+                <button type = "submit" >Google Search</button>
+                <button type = "submit" name = "btnI">I'm Feeling Lucky</button> 
+            </div>
+        </form>
+    </body>
+</html>
